@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .abc{
+        display: flex;
+    }
+
+@media (max-width:768px){
+
+    .abc{
+        display: block;
+    }
+    .abc img{
+        width: 100%;
+        height: auto;
+    }
+    .abc p{
+        font-size: 40px;
+        background-color: aquamarine;
+        color: blue;
+    }
+    h1{
+        text-shadow: 8px 7px 6px green;
+    }
+}
+
+@media(min-width:1024px){
+    .abc{
+        border: 2px solid goldenrod;
+    }
+    .abc p{
+        font-size: 30px;
+        text-shadow: 3px 4px 5px blue;
+    }
+    h1{
+        color: blue;
+        background-color: pink;
+    }
+}
+
+@media(min-width:768px) and (max-width:1023px){
+    .abc p{
+        font-size: 40px;
+    }
+    h1{
+        background-color: red;
+    }
+}
+</style>
+</head>
+<body>
+   <center> <h1>welcome to html webpage </h1></center>
+
+    <div class="abc">
+        <img src="https://images.unsplash.com/photo-1732461380169-fd49843d91af?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo accusamus cumque totam beatae, veniam corrupti, doloribus mollitia repudiandae enim architecto, fuga quia explicabo aliquam est ut nobis fugiat dolores.</p>
+    </div>
+</body>
+</html>
