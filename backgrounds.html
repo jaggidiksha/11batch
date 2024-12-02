@@ -75,6 +75,26 @@ img{
 
     </div> -->
     <button>clickme!</button>
+
+ <script>
+    function abc(a){
+        string=""
+        for(x in a){
+            if(typeof a[x]==="string"){
+                string+=a[x]+" "
+            }
+        }
+
+        return string
+
+    }
+    const obj={
+        name:"john",
+        age:25,
+        occupation:"developer"
+    }
+    console.log(abc(obj))
+ </script>
     
 </body>
 </html>
