@@ -8,26 +8,35 @@
 </head>
 
 <body>
+    <button onclick="off()">off</button>
+<img id="image" src="https://e7.pngegg.com/pngimages/922/441/png-clipart-creative-bulb-lightbulb-energy-saving-lamps-thumbnail.png" height="200" width="200"alt="">
+<button onclick="on()">on</button><br>
 
+    <p id="abc">hello  html</p>
+    <button onclick='document.getElementById("abc").innerHTML="hello javascript"'>change text</button><br>
 
-    <!-- <p id="abc">hello  html</p>
-    <button onclick='document.getElementById("abc").innerHTML="hello javascript"'>change text</button> -->
-
-    <!-- <label for="fisrt name">name </label> -->
-     <!-- Password<input type="password" id="first"><br><br>
+    <label for="fisrt name">name </label> 
+     Password<input type="password" id="first"><br><br>
      Confirm Password<input type="password" id="second">
-     <button onclick="abc()">Submit</button> -->
+     <button onclick="abc()">Submit</button>
     <script>
 
-        // function abc(){
-        //   let a=  document.getElementById("first").value
-        //   let b=document.getElementById("second").value
-        //   if(a==b){
-        //     document.write("passwords are matching")
-        //   }else{
-        //     document.write("passwords are not matching")
-        //   }
-        // }
+        function off(){
+document.getElementById("image").src="https://cdn.vectorstock.com/i/1000v/70/44/3d-realistic-off-light-bulb-icon-closeup-vector-27407044.jpg"
+        }
+
+        function on(){
+            document.getElementById("image").src="https://e7.pngegg.com/pngimages/922/441/png-clipart-creative-bulb-lightbulb-energy-saving-lamps-thumbnail.png"
+        }
+        function abc(){
+          let a=  document.getElementById("first").value
+          let b=document.getElementById("second").value
+          if(a==b){
+            document.write("passwords are matching")
+          }else{
+            document.write("passwords are not matching")
+          }
+        }
         // for(let i=1;i<=10;i++){
         //     if(i==5){
         //         break;

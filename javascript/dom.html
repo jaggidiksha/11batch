@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  first number  <input type="number" id="first"><br><br>
+  second number  <input type="number" id="second"><br><br>
+  <button onclick="add()">+</button>
+  <button>-</button>
+  <button>*</button>
+  <button>/</button>
+    <script>
+
+        function add(){
+          let a= parseInt (document.getElementById("first").value)
+          let b= parseInt (document.getElementById("second").value)
+          document.write(a+b)
+        }
+        // let a=parseInt("he was 50 years")
+        // console.log(a)
+    </script>
+</body>
+</html>

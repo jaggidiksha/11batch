@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>STUDENT FORM</h1>
+    <form id="studentform"> 
+        <label>NAME</label> 
+        <input type="text" id="name"><br><br>
+        <label>AGE</label>
+        <input type="text" id="age"><br><br>
+        <label>ADDRESS</label>
+        <input type="text" id="address"><br><br>
+        <label>EMAIL</label>
+        <input type="text" id="email"><br><br>
+        <label>PHONE NUMBER</label>
+        <input type="text" id="phone"><br><br>
+        <label>TIME</label>
+        <input type="time" id="time"><br><br>
+        <label>DATE</label>
+        <input type="date" id="date"><br><br>
+        <input type="submit">
+    </form>
+</div>
+
+<script>
+   let form= document.getElementById("studentform")
+   form.addEventListener("submit",function(e){
+e.preventDefault()
+
+  let name=  document.getElementById("name").value
+  let age=  document.getElementById("age").value
+  let address=  document.getElementById("address").value
+  let email=  document.getElementById("email").value
+  let phone=  document.getElementById("phone").value
+  let time=  document.getElementById("time").value
+  let date=  document.getElementById("date").value
+
+  console.log("NAME:",name)
+  console.log("ADDRESS:",address)
+  console.log("AGE:",age)
+  console.log("EMAIL:",email)
+  console.log("PHONE NUMBER:",phone)
+  console.log("TIME:",time)
+  console.log("DATE:",date)
+
+
+
+   })
+
+</script>
+    
+</body>
+</html>
