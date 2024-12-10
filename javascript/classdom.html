@@ -4,17 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        h1{
+            text-shadow: 10px 10px 8px blue;
+        }
+        .container{
+            box-shadow:8px 9px 40px green;
+        }
+        .container:hover{
+            box-shadow: 20px 10px 30px orange;
+        }
+        .container:hover ul{
+ background-color: aquamarine;
+        }
+    </style>
 </head>
 <body>
-    <!-- <ul>FRUITS
+    <script>
+        AOS.init();
+      </script>
+    <center><h1>DOM</h1></center>
+
+    
+    <ul>FRUITS
         <li class="list-item">Apple</li>
         <li class="list-item">Banana</li>
         <li class="list-item">Orange</li>
         <li class="list-item">Pineapple</li>
         <li class="list-item">Guava</li>
         <li class="list-item">Litchi</li>
-    </ul> -->
-<div class="container">
+    </ul>
+<div class="container" data-aos="flip-up">
     <p class="text">hello world</p>
     <p class="text">hello html </p>
     <p class="text">hello javascript</p>
@@ -31,11 +53,12 @@
 </div>
 
     <script>
+  
 
-//         let data=document.querySelectorAll(".text")
-//         data.forEach((paragraph)=>{
-// console.log(paragraph.textContent)
-//         })
+        let data=document.querySelectorAll(".text")
+        data.forEach((paragraph)=>{
+console.log(paragraph.textContent)
+        })
 
     //   let firstpara=  document.querySelector(".text")
     //   console.log(firstpara.textContent)
@@ -44,8 +67,8 @@
 //   items[1].textContent="papaya"
 //   items[2].style.backgroundColor="orange"
 
-// let lis=document.getElementsByTagName("li")
-// lis[5].style.backgroundColor="red"
+let lis=document.getElementsByTagName("li")
+lis[5].style.backgroundColor="red"
 
     </script>
 </body>

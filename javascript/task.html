@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="toggle-button">Hide Items</button>
+    <ul id="item-list">
+      <li class="list-item">Item 1</li>
+      <li class="list-item">Item 2</li>
+      <li class="list-item">Item 3</li>
+      <li class="list-item">Item 4</li>
+    </ul>
+    <script>
+        const toggleButton = document.querySelector('#toggle-button');
+        const items = document.querySelectorAll('.list-item');
+        let areItemsVisible = true;
+        toggleButton.addEventListener('click', () => {
+  // Toggle visibility of each item
+  items.forEach(item => {
+    item.style.display = areItemsVisible ? 'none' : 'block';
+  });
+  toggleButton.textContent = areItemsVisible ? 'Show Items' : 'Hide Items';
+  areItemsVisible = !areItemsVisible;
+});
+    </script>
+</body>
+</html>

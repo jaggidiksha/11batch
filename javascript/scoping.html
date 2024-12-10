@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // scoping:scoping defines the visibility/accessibility of variables in different parts of your code 
+        // js has primarily two types of scoping
+        // global scoping
+        // local scoping
+
+
+        // global scoping: the variables declared outside of function/block of code are called global variables and the concept is called global scoping,the global variables are accessed anywhere in the code 
+
+        // example
+        // var a="hello";
+        // function abc(){
+        //     console.log(a)
+        // }
+        // abc()
+        // console.log(a)
+
+        // local scoping: the variables declared inside the function/block of code are called local variables abd the concept is called local scoping,the local variabels are only accessible inside the function/block they are declared in. 
+
+        // local scoping is further divided into two types
+        // function scope
+        // block scope
+
+        // function scope:the variables declared inside the function are called functional scope variables and the variables declared with var type are function scope
+
+        // function abc(){
+        //     var funscope="hey"
+        // console.log(funscope)
+        // }
+        // abc()
+
+        // block scope:the variables declared inside the block are called block scope variables and the variables declared with let and const  type are block scope
+
+
+        // if(true){
+        //     let a="hii"
+        // }
+
+        // console.log(a)
+
+
+
+        // lexical scoping/closures:we have two funtions one is outerfuntion and other one is innerfunction,innerfuntion can access the parameters and variables of the outerfuntion
+        // es6
+        // arrow functions:
+        //    const abc=()=>{
+
+        //    }
+        //    abc()
+
+
+        // the sumof two numbers is sum
+
+        // `` template literals /backticks
+        //  ${expression name}:string interpolation
+
+        // const outerfuntion = (a) => {
+        //     let b = 90;
+        //     const innerfunction = () => {
+        //         let sum = a + b
+        //         console.log(`the sum of two numbers is ${sum}`)
+        //         //  console.log("the sum of two numbers is ",sum)
+
+        //     }
+        //     innerfunction()
+
+        // }
+        // outerfuntion(80)
+
+
+        //    localStorage: localstorage is a client side web storage feature that allows you to store the data as a key value pair ,the storage capacity can vary between different browsers but typically ranges between 5-10 mb and the limitation of localstorage is that it can only store the key value pair data , if we want to store more complex data we can go for other client side web storage features like indexDB .
+
+        // to set the item
+        localStorage.setItem("username", "dikshajaggi")
+
+        // to get the item
+        let a = localStorage.getItem("username")
+        console.log(a)
+    </script>
+
+</body>
+
+</html>
