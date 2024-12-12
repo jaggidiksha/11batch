@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: red;
+            /* grid-template-rows: ; */
+        }
+        .grid-item{
+            padding:10px ;
+            text-align: center;
+            border:8px solid rgb(242, 160, 160);
+
+        }
+        .item1{
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+        .item2{
+            grid-column: 3;
+            grid-row: 1 / span 3;
+        }
+        .item5{
+            grid-column: 1 /span 3;
+            grid-row:3; 
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item  item4">4</div>
+        <div class="grid-item  item5">5</div>
+
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+    background-color: aquamarine;
+    grid-template-columns: auto auto auto ;
+    /* grid-template-rows: 80px 200px; */
+    /* justify-content: start; */
+    align-content:space-evenly;
+        }
+        .griditem{
+            background-color: #f07373;
+            padding: 70px;
+            border:8px solid rgb(247, 199, 199);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="griditem">1</div>
+        <div class="griditem">2</div>
+        <div class="griditem">3</div>
+        <div class="griditem">4</div>
+        <div class="griditem">5</div>
+        <div class="griditem">6</div>
+        <div class="griditem">7</div>
+        <div class="griditem">8</div>
+        <div class="griditem">9</div>
+
+    </div>
+    
+</body>
+</html> -->
