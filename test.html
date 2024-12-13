@@ -4,11 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* div{
+            height:100px;
+            width:200px;
+            border:2px solid red;
+            background-color: blue;
+            transition: background-color 2s linear ,width 2s linear ,transform 2s;
+          
+
+        } */
+        div {
+            height: 100px;
+            width: 200px;
+            border: 2px solid red;
+            background-color: blue;
+            animation: rotateScale 2s infinite; /* Animation applied */
+        }
+        @keyframes rotateScale {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+            50% {
+                transform: rotate(180deg) scale(1.5);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+    
+        /* div:hover{
+            background-color: aqua;
+            width:600px;
+            transform: rotate(360deg);
+        } */
+    </style>
 </head>
 <body>
+    <div>
+    
+    </div>
     
 
-    <form method="get" action="" onchange="this.submit()">
+    <!-- <form method="get" action="" onchange="this.submit()">
         <select 
             style="appearance:none; border:none; margin-left:30px; font-size:39px;" 
             name="url"
@@ -17,7 +55,7 @@
             <option style="font-size: 20px;" value="https://unsplash.com/">China</option>
             <option style="font-size: 20px;" value="https://www.japan.travel/en/">Japan</option>
         </select>
-    </form>
+    </form> -->
    
     
 </body>
