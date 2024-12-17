@@ -1,1 +1,2 @@
-document.write("js")
+// document.write("js")
+alert("heyy")
