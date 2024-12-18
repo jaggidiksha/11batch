@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conatiner{
+            display: flex;
+            border:2px solid red;
+            height:400px;
+            flex-flow: row wrap;
+         
+        }  
+         .box1{
+               border:2px solid green; 
+               width:100px;
+               margin:10px 0;
+            }
+#box{
+    order:1;
+    flex-grow: 1;
+  
+}
+#a{
+    flex-basis: 200px;
+    align-self: stretch;
+}
+    </style>
+</head>
+<body>
+<div class="conatiner">
+    <div class="box1" id="box">hello1</div>
+    <div class="box1" id="a">hello2</div>
+    <div class="box1">hello3</div>
+    <div class="box1">hello4</div>
+    <div class="box1">hello5</div>
+    <div class="box1">hello6</div>
+    <div class="box1">hello7</div>
+    <div class="box1">hello8</div>
+    
+</div>
+    
+</body>
+</html>
