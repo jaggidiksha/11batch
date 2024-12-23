@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            height:400px;
+            border:2px solid red;
+            display: flex;
+            flex-flow: row wrap;
+            gap:20px;
+
+        }
+        .box{
+            width:100px;
+            border:2px solid green;
+        }
+        #box1{
+            order:1;
+            flex-grow:1
+        }
+        #box2{
+            flex-basis: 200px;
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+
+    </div>
+    <script>
+    //  let    a=[9,8,753,8765,543,87,54]
+    //  a.splice(1,2)
+    //  console.log(a)
+        // let max=a[0]
+        // for(let i=1;i<a.length;i++){
+    
+        //     if(a[i]>max){
+        //         max=a[i]
+        //     }
+      
+        // }
+        // console.log("maximum number is",max)
+      
+    </script>
+</body>
+</html>
