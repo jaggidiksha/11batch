@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object literal
+    //  let obj={
+    //     name:"John",
+    //     age:30,
+    //     occupation:"developer"
+    //  }
+    //  document.write(obj.name)
+    //  document.write(obj.age)
+    //  document.write(obj.occupation)
+
+        // object constructor
+
+//  let emp= new Object()
+//  emp.name="eric"
+//  emp.age=23
+//  emp.salary=80000
+//  document.write(emp.name,emp.age,emp.salary)
+
+
+// prototypal object
+
+// const abc={
+//     greet:function(){
+//         console.log(`hello my name is ${this.name}`)
+//     }
+// }
+// object
+// let a=Object.create(abc)
+// a.name="alice"
+// a.greet()
+
+const obj={
+    name:"eric"
+}
+// console.log(obj)
+
+const obj1={
+    age:24,
+    __proto__:obj
+}
+// console.log(obj1)
+
+
+const obj2={
+    occupation:"developer",
+    __proto__:obj1
+}
+console.log(obj2)
+
+
+
+
+    </script>
+    
+</body>
+</html>
