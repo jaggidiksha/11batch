@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:300px;
+            width:400px;
+            background-color: aquamarine;
+            border:2px solid blue;
+            /* transition: background-color  4s; */
+            /* transition-property: width;
+            transition-duration: 4s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s; */
+            transition: width 2s linear 1s,transform 2s;
+        }
+        div:hover{
+            background-color: aqua;
+            width:200px;
+            /* transform: skew(90deg); */
+            
+        }
+      h1::before{
+        content: "$";
+      }
+      h1::after{
+        content: "$";
+      }
+    </style>
+</head>
+<body>
+    <h1>Excellence</h1>
+    <div>
+
+    </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maiores obcaecati corporis error in? Quasi veritatis vero vel accusantium id facere recusandae assumenda nihil vitae, dolor nisi deserunt quis saepe.</p>
+
+    <!-- pseudo classes : use dto define specific state of an element
+     
+    pseudo elements : used to style specific state of an element 
+
+    h1::before{
+    content:"hii"
+    }
+
+    -->
+</body>
+</html>
